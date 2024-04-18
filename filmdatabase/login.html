@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+</head>
+<body>
+    <div id="background">
+            <main>
+                <form action="login.php" method="POST">
+                    <div id="login_wrap">
+                        <h1 id="sign_label">Sign-in</h1>
+                        naam<input type="text" id="naam" name="naam" required autocomplete="off">
+                        voornaam<input type="text" id="voornaam" name="voornaam" required autocomplete="off">
+                        email<input type="email" id="email" name="email" required > 
+                        password<input type="password" id="password" name="password" required>
+                        <button type="submit" id="submit">submit</button>
+                        <a href="movie.php">continue without signing in</a>
+                    </div>
+                </form>       
+            </main>
+    </div>
+</body>
+</html>

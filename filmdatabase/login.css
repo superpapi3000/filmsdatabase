@@ -1,0 +1,75 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Franklin Gothic Medium';
+}
+#background {
+    position: relative;
+    width:100%;
+    height:100%;
+    background-image: url(movie1.jpeg);
+    animation: background 20s ease-in-out 1s infinite ;
+}
+@keyframes background {
+    0% {background-image:  url(movie1.jpeg);}
+    50% {background-image:  url(movie2.jpeg);}
+    100% {background-image:  url(movie1.jpeg);}
+    
+}
+#login_wrap {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border: 4px solid silver;
+    border-radius: 5%;
+    transform: translate(-50%, -50%);
+}
+#sign_label {
+    display: flex;
+    justify-content: center;
+    color:black;
+    text-shadow: 2px 4px 3px grey;
+}
+#naam {
+    width: 50%;
+    height: 30px;
+    border:2px solid black;
+}
+#voornaam {
+    width: 50%;
+    height: 30px;
+    border:2px solid black;
+ 
+}
+#password {
+    width: 50%;
+    height: 30px;
+    border:2px solid black;
+}
+#email {
+    width: 50%;
+    height: 30px;
+    border:2px solid;
+}
+#submit {
+    height: 8%;
+    width: 25%;
+    border:2px solid black;
+    box-shadow: 2px 4px 7px;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    transition: all 200ms;
+}
+#submit:hover {
+    box-shadow: 1px 1px 3px;
+    opacity: 70%;
+}

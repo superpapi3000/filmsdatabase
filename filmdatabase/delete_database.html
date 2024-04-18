@@ -1,0 +1,35 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete_database</title>
+    <link rel="stylesheet" href="delete_database.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1> M-VIES</h1>
+    </header>
+    <nav>
+        <a class="link" href="login.html">login</a>
+        <a class="link" href="add_database.html">add movies</a>
+        <a class="link" href="update_database.html">update movies</a>
+        <a class="link" id="current" href="delete_database.html">delete movies</a>
+    </nav>
+        <h2 id="warning">PLEASE FILL ALL FIELDS</h2>
+    <form action="delete_database.php" method="POST">
+    <div id="wrapper">
+        <h1>delete movies</h1>
+        <div id="film_id">
+            <p> filmID</p>
+            <div id="film_id_content">
+                <label> film id:</label>
+                <input type="text" name="film_id"placeholder="vul de film id in" autocomplete="off">
+            </div>
+        </div>
+        <button  type="submit" id="submit">delete</button>
+    </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_database</title>
+    <link rel="stylesheet" href="add_database.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1> M-VIES</h1>
+    </header>
+    <nav>
+        <a class="link" href="login.html">login</a>
+        <a class="link" id="current"href="add_database.html">add movies</a>
+        <a class="link" href="update_database.html">update movies</a>
+        <a class="link" href="delete_database.html">delete movies</a>
+    </nav>
+    <h2 id="warning">PLEASE FILL ALL FIELDS</h2>
+    <form action="add_database.php" method="POST" enctype="multipart/form-data">
+    <div id="wrapper">
+        <h1>add movies</h1>
+        <input type="hidden" name="film_id" value="">
+        <div id="director">
+            <p>add director</p>
+            <div id="director_content">
+                <label> directorNaam:</label>
+                <input type="text" id="name2" name="director_naam" required autocomplete="off"><br><br>
+                <label> directorVoornaam:</label>
+                <input type="text" id="name2" name="director_voornaam" required autocomplete="off"><br><br>
+                <label> directorGeboortedatum:</label>
+                <input type="date" id="name2" name="director_geboortedatum" required autocomplete="off"><br><br>
+            </div>
+        </div>
+        <div id="titel">
+            <p>add titel</p>
+            <div id="titel_content">
+                <label > titel:</label>
+                <input type="text" id="name2" name="titel" required autocomplete="off"><br><br>
+            </div>
+        </div>
+        <div id="genre">
+            <p>add genre</p>
+            <div id="genre_content">
+                <label> genre:</label>
+                <select name="genre" required>
+                    <option value="action">action</option>
+                    <option value="drama">drama</option>
+                    <option value="horror">horror</option>
+                    <option value="thriller">thriller</option>
+                    <option value="romance">romance</option>
+                    <option value="crime">crime</option>
+                    <option value="comedy">comedy</option>
+                  </select>
+            </div>
+        </div>
+        <div id="release_year">
+            <p>add release year</p>
+            <div id="release_year_content">
+                <label> release:</label>
+                <input type="date" id="name2" name="release_year" required><br><br>
+            </div>
+        </div>
+        <div id="beschrijving">
+            <p>add beschrijving</p>
+            <div id="beschrijving_content">
+                <textarea rows="8" cols="25" placeholder="type de beschrijving" name="beschrijving" required></textarea>
+            </div>
+        </div>
+        <div id="poster">
+            <p>add poster</p>
+            <div id="poster_content">
+                <label>poster</label>
+                <input type="file" name="poster" required>
+            </div>
+        </div>
+        <button  type="submit" id="submit">Add</button>
+    </div>
+    </form>
+
+</body>
+</html>

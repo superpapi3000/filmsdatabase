@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update_database</title>
+    <link rel="stylesheet" href="update_database.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1> M-VIES</h1>
+    </header>
+    <nav>
+        <a class="link" href="login.html">login</a>
+        <a class="link" href="add_database.html">add movies</a>
+        <a class="link" id="current" href="update_database.html">update movies</a>
+        <a class="link" href="delete_database.html">delete movies</a>
+    </nav>
+    <h2 id="warning">PLEASE FILL ALL FIELDS</h2>
+    <form action="update_database.php" method="POST" enctype="multipart/form-data">
+    <div id="wrapper">
+        <h1>update movies</h1>
+        <div id="film_id">
+            <p> filmID</p>
+            <div id="film_id_content">
+                <label> film id:</label>
+                <input type="text" name="film_id"placeholder="vul de film id in" autocomplete="off">
+            </div>
+        </div>
+        <div id="director">
+            <p>update director</p>
+            <div id="director_content">
+                <label> directorID:</label>
+                <input type="text"  name="director_id" autocomplete="off" placeholder="vul director id in"><br><br>
+                <label> directorNaam:</label>
+                <input type="text"  name="director_naam" autocomplete="off"><br><br>
+                <label> directorVoornaam:</label>
+                <input type="text"  name="director_voornaam"  autocomplete="off"><br><br>
+                <label> directorGeboortedatum:</label>
+                <input type="date"  name="director_geboortedatum" autocomplete="off"><br><br>
+            </div>
+        </div>
+        <div id="titel">
+            <p>update titel</p>
+            <div id="titel_content">
+                <label > titel:</label>
+                <input type="text" id="name2" name="titel"  autocomplete="off"><br><br>
+            </div>
+        </div>
+        <div id="genre">
+            <p>update genre</p>
+            <div id="genre_content">
+                <label> genre:</label>
+                <select name="genre">
+                    <option value="action">action</option>
+                    <option value="drama">drama</option>
+                    <option value="horror">horror</option>
+                    <option value="thriller">thriller</option>
+                    <option value="romance">romance</option>
+                    <option value="crime">crime</option>
+                  </select>
+            </div>
+        </div>
+        <div id="release_year">
+            <p>update release year</p>
+            <div id="release_year_content">
+                <label> release:</label>
+                <input type="date" id="name2" name="release_year" ><br><br>
+            </div>
+        </div>
+        <div id="beschrijving">
+            <p>update beschrijving</p>
+            <div id="beschrijving_content">
+                <textarea rows="5" cols="20" placeholder="type de beschrijving" name="beschrijving"></textarea>
+            </div>
+        </div>
+        <div id="poster">
+            <p>update poster</p>
+            <div id="poster_content">
+                <label>poster</label>
+                <input type="file" name="poster" >
+            </div>
+        </div>
+        <button  type="submit" id="submit">update</button>
+    </div>
+    </form>
+
+</body>
+</html>
